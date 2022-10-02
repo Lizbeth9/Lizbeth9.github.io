@@ -229,19 +229,19 @@ content-body-padre-2-padre {
 .card {
     margin: 50px auto 0;
     width: 400px;
-    height: 600px;
+    height: 700px;
     perspective: 1000px;
 }
 .card1 {
     margin: 50px auto 0;
     width: 400px;
-    height: 600px;
+    height: 700px;
     perspective: 1000px;
 }
 .card2 {
     margin: 50px auto 0;
     width: 400px;
-    height: 600px;
+    height: 700px;
     perspective: 1000px;
 }
 
@@ -460,6 +460,14 @@ transform: rotateY(180deg);
     grid-column-end: 1;
     grid-row-start: 12;
     grid-row-end: 12;
+    position: relative;
+}
+.content-cardbody-padre-13 {
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 13;
+    grid-row-end: 13;
     position: relative;
 }
 
