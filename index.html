@@ -5,8 +5,529 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!--Librerias de CSS-->
+    <link rel="stylesheet" href="css/generalindex.css">
+    <!--Librerias de JS-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/acciones.js"></script>
+
 </head>
 <body>
-    <p>Hola mundo</p>
+    <!--Nav bar-->
+    <nav>
+        <img src="img/logo.png" class="imagenlogo">
+    </nav>
+    <!--Cuerpo-->
+    <div class="content-body">
+        <div class="content-body-padre">
+            <div class="content-body-padre-1">
+                <div class="content-body-padre-1-padre">
+                    <div class="content-body-padre-1-padre-1">
+                        <img src="img/background.jpg" class="imagenbackground">
+                    </div>
+                    <div class="content-body-padre-1-padre-2">
+                        <p class="textoprincipal">Elige lo mejor, elige sabroso</p>
+                        <div class="arrow"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="content-body-padre-2">
+                <div class="content-body-padre-2-padre">
+                    <div class="content-body-padre-2-padre-1">
+                        <div class="content-body-padre-2-padre-1-padre">
+                            <div class="content-body-padre-2-padre-1-padre-1">
+                                <input id="searchbuttom" class="searchinput" type="search" name="busquedarestaurante" placeholder="Buscar restaurante">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-body-padre-2-padre-2">
+                        <div class="content-body-padre-2-padre-2-padre">
+                            <div class="content-body-padre-2-padre-2-padre-1">
+                                <div class="card" id="card1">
+                                    <div class="card__inner">
+                                        <div class="card__face card__face--front">
+                                            <img src="img/imagen1.png">
+                                        </div>
+                                        <div class="card__face card__face--back">
+                                            <div class="card__content"> 
+                                                <div class="card__body">
+                                                    <div class="content-cardbody">
+                                                        <div class="content-cardbody-padre">
+                                                            <div class="content-cardbody-padre-1">
+                                                                <div class="content-cardbody-general-padre">
+                                                                    <div class="content-cardbody-general-padre-1">
+                                                                        <p class="textoindicativo">Id</p>
+                                                                    </div>
+                                                                    <div class="content-cardbody-general-padre-2">
+                                                                        <p class="textoresponsivo" id="dato1"></p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="content-cardbody-padre-2">
+                                                                <div class="content-cardbody-general-padre">
+                                                                    <div class="content-cardbody-general-padre-1">
+                                                                        <p class="textoindicativo">Name</p>
+                                                                    </div>
+                                                                    <div class="content-cardbody-general-padre-2">
+                                                                        <p class="textoresponsivo" id="dato2"></p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="content-cardbody-padre-3">
+                                                                <div class="content-cardbody-general-padre">
+                                                                    <div class="content-cardbody-general-padre-1">
+                                                                        <p class="textoindicativo">Contact</p>
+                                                                    </div>
+                                                                    
+                                                                </div>
+                                                            </div>
+                                                            <div class="content-cardbody-padre-4">
+                                                                <div class="content-cardbody-general-padre">
+                                                                    <div class="content-cardbody-general-padre-1">
+                                                                        <p class="textoindicativo">Site</p>
+                                                                    </div>
+                                                                    <div class="content-cardbody-general-padre-2">
+                                                                        <p class="textoresponsivo" id="dato3"></p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="content-cardbody-padre-5">
+                                                                <div class="content-cardbody-general-padre">
+                                                                    <div class="content-cardbody-general-padre-1">
+                                                                        <p class="textoindicativo">Email</p>
+                                                                    </div>
+                                                                    <div class="content-cardbody-general-padre-2">
+                                                                        <p class="textoresponsivo" id="dato4"></p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="content-cardbody-padre-6">
+                                                                <div class="content-cardbody-general-padre">
+                                                                    <div class="content-cardbody-general-padre-1">
+                                                                        <p class="textoindicativo">Phone</p>
+                                                                    </div>
+                                                                    <div class="content-cardbody-general-padre-2">
+                                                                        <p class="textoresponsivo" id="dato5"></p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="content-cardbody-padre-7">
+                                                                <div class="content-cardbody-general-padre">
+                                                                    <div class="content-cardbody-general-padre-1">
+                                                                        <p class="textoindicativo">Address</p>
+                                                                    </div>
+                                                                    
+                                                                </div>
+                                                            </div>
+                                                            <div class="content-cardbody-padre-8">
+                                                                <div class="content-cardbody-general-padre">
+                                                                    <div class="content-cardbody-general-padre-1">
+                                                                        <p class="textoindicativo">Street</p>
+                                                                    </div>
+                                                                    <div class="content-cardbody-general-padre-2">
+                                                                        <p class="textoresponsivo" id="dato6"></p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="content-cardbody-padre-9">
+                                                                <div class="content-cardbody-general-padre">
+                                                                    <div class="content-cardbody-general-padre-1">
+                                                                        <p class="textoindicativo">City</p>
+                                                                    </div>
+                                                                    <div class="content-cardbody-general-padre-2">
+                                                                        <p class="textoresponsivo" id="dato7"></p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="content-cardbody-padre-10">
+                                                                <div class="content-cardbody-general-padre">
+                                                                    <div class="content-cardbody-general-padre-1">
+                                                                        <p class="textoindicativo">State</p>
+                                                                    </div>
+                                                                    <div class="content-cardbody-general-padre-2">
+                                                                        <p class="textoresponsivo" id="dato8"></p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="content-cardbody-padre-11">
+                                                                <div class="content-cardbody-general-padre">
+                                                                    <div class="content-cardbody-general-padre-1">
+                                                                        <p class="textoindicativo">Location</p>
+                                                                    </div>
+                                                                    <div class="content-cardbody-general-padre-2">
+                                                                        <p class="textoresponsivo" id="dato9"></p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="content-cardbody-padre-12">
+                                                                <div class="content-cardbody-general-padre">
+                                                                    <div class="content-cardbody-general-padre-1">
+                                                                        <p class="textoindicativo">Rating</p>
+                                                                    </div>
+                                                                    <div class="content-cardbody-general-padre-2">
+                                                                        <p class="textoresponsivo" id="dato10"></p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            
+                                                            
+                                        
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content-body-padre-2-padre-2-padre-2">
+                                <div class="card1">
+                                    <div class="card__inner1">
+                                        <div class="card__face card__face--front">
+                                            <img src="img/imagen2.png">
+                                        </div>
+                                        <div class="card__face card__face--back">
+                                            <div class="card__content">
+                                                
+                                                <div class="card__body">
+                                                    <div class="content-cardbody">
+                                                        <div class="content-cardbody-padre">
+                                                            <div class="content-cardbody-padre-1">
+                                                                <div class="content-cardbody-general-padre">
+                                                                    <div class="content-cardbody-general-padre-1">
+                                                                        <p class="textoindicativo">Id</p>
+                                                                    </div>
+                                                                    <div class="content-cardbody-general-padre-2">
+                                                                        <p class="textoresponsivo" id="dato1"></p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="content-cardbody-padre-2">
+                                                                <div class="content-cardbody-general-padre">
+                                                                    <div class="content-cardbody-general-padre-1">
+                                                                        <p class="textoindicativo">Name</p>
+                                                                    </div>
+                                                                    <div class="content-cardbody-general-padre-2">
+                                                                        <p class="textoresponsivo" id="dato2"></p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="content-cardbody-padre-3">
+                                                                <div class="content-cardbody-general-padre">
+                                                                    <div class="content-cardbody-general-padre-1">
+                                                                        <p class="textoindicativo">Contact</p>
+                                                                    </div>
+                                                                    
+                                                                </div>
+                                                            </div>
+                                                            <div class="content-cardbody-padre-4">
+                                                                <div class="content-cardbody-general-padre">
+                                                                    <div class="content-cardbody-general-padre-1">
+                                                                        <p class="textoindicativo">Site</p>
+                                                                    </div>
+                                                                    <div class="content-cardbody-general-padre-2">
+                                                                        <p class="textoresponsivo" id="dato3"></p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="content-cardbody-padre-5">
+                                                                <div class="content-cardbody-general-padre">
+                                                                    <div class="content-cardbody-general-padre-1">
+                                                                        <p class="textoindicativo">Email</p>
+                                                                    </div>
+                                                                    <div class="content-cardbody-general-padre-2">
+                                                                        <p class="textoresponsivo" id="dato4"></p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="content-cardbody-padre-6">
+                                                                <div class="content-cardbody-general-padre">
+                                                                    <div class="content-cardbody-general-padre-1">
+                                                                        <p class="textoindicativo">Phone</p>
+                                                                    </div>
+                                                                    <div class="content-cardbody-general-padre-2">
+                                                                        <p class="textoresponsivo" id="dato5"></p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="content-cardbody-padre-7">
+                                                                <div class="content-cardbody-general-padre">
+                                                                    <div class="content-cardbody-general-padre-1">
+                                                                        <p class="textoindicativo">Address</p>
+                                                                    </div>
+                                                                    
+                                                                </div>
+                                                            </div>
+                                                            <div class="content-cardbody-padre-8">
+                                                                <div class="content-cardbody-general-padre">
+                                                                    <div class="content-cardbody-general-padre-1">
+                                                                        <p class="textoindicativo">Street</p>
+                                                                    </div>
+                                                                    <div class="content-cardbody-general-padre-2">
+                                                                        <p class="textoresponsivo" id="dato6"></p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="content-cardbody-padre-9">
+                                                                <div class="content-cardbody-general-padre">
+                                                                    <div class="content-cardbody-general-padre-1">
+                                                                        <p class="textoindicativo">City</p>
+                                                                    </div>
+                                                                    <div class="content-cardbody-general-padre-2">
+                                                                        <p class="textoresponsivo" id="dato7"></p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="content-cardbody-padre-10">
+                                                                <div class="content-cardbody-general-padre">
+                                                                    <div class="content-cardbody-general-padre-1">
+                                                                        <p class="textoindicativo">State</p>
+                                                                    </div>
+                                                                    <div class="content-cardbody-general-padre-2">
+                                                                        <p class="textoresponsivo" id="dato8"></p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="content-cardbody-padre-11">
+                                                                <div class="content-cardbody-general-padre">
+                                                                    <div class="content-cardbody-general-padre-1">
+                                                                        <p class="textoindicativo">Location</p>
+                                                                    </div>
+                                                                    <div class="content-cardbody-general-padre-2">
+                                                                        <p class="textoresponsivo" id="dato9"></p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="content-cardbody-padre-12">
+                                                                <div class="content-cardbody-general-padre">
+                                                                    <div class="content-cardbody-general-padre-1">
+                                                                        <p class="textoindicativo">Rating</p>
+                                                                    </div>
+                                                                    <div class="content-cardbody-general-padre-2">
+                                                                        <p class="textoresponsivo" id="dato10"></p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            
+                                                            
+                                        
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content-body-padre-2-padre-2-padre-3">
+                                <div class="card2">
+                                    <div class="card__inner2">
+                                        <div class="card__face card__face--front">
+                                            <img src="img/imagen3.png">
+                                        </div>
+                                        <div class="card__face card__face--back">
+                                            <div class="card__content">
+                                                <div class="card__body">
+
+                                                
+                                                <div class="content-cardbody">
+                                                    <div class="content-cardbody-padre">
+                                                        <div class="content-cardbody-padre-1">
+                                                            <div class="content-cardbody-general-padre">
+                                                                <div class="content-cardbody-general-padre-1">
+                                                                    <p class="textoindicativo">Id</p>
+                                                                </div>
+                                                                <div class="content-cardbody-general-padre-2">
+                                                                    <p class="textoresponsivo" id="dato1"></p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="content-cardbody-padre-2">
+                                                            <div class="content-cardbody-general-padre">
+                                                                <div class="content-cardbody-general-padre-1">
+                                                                    <p class="textoindicativo">Name</p>
+                                                                </div>
+                                                                <div class="content-cardbody-general-padre-2">
+                                                                    <p class="textoresponsivo" id="dato2"></p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="content-cardbody-padre-3">
+                                                            <div class="content-cardbody-general-padre">
+                                                                <div class="content-cardbody-general-padre-1">
+                                                                    <p class="textoindicativo">Contact</p>
+                                                                </div>
+                                                                
+                                                            </div>
+                                                        </div>
+                                                        <div class="content-cardbody-padre-4">
+                                                            <div class="content-cardbody-general-padre">
+                                                                <div class="content-cardbody-general-padre-1">
+                                                                    <p class="textoindicativo">Site</p>
+                                                                </div>
+                                                                <div class="content-cardbody-general-padre-2">
+                                                                    <p class="textoresponsivo" id="dato3"></p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="content-cardbody-padre-5">
+                                                            <div class="content-cardbody-general-padre">
+                                                                <div class="content-cardbody-general-padre-1">
+                                                                    <p class="textoindicativo">Email</p>
+                                                                </div>
+                                                                <div class="content-cardbody-general-padre-2">
+                                                                    <p class="textoresponsivo" id="dato4"></p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="content-cardbody-padre-6">
+                                                            <div class="content-cardbody-general-padre">
+                                                                <div class="content-cardbody-general-padre-1">
+                                                                    <p class="textoindicativo">Phone</p>
+                                                                </div>
+                                                                <div class="content-cardbody-general-padre-2">
+                                                                    <p class="textoresponsivo" id="dato5"></p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="content-cardbody-padre-7">
+                                                            <div class="content-cardbody-general-padre">
+                                                                <div class="content-cardbody-general-padre-1">
+                                                                    <p class="textoindicativo">Address</p>
+                                                                </div>
+                                                                
+                                                            </div>
+                                                        </div>
+                                                        <div class="content-cardbody-padre-8">
+                                                            <div class="content-cardbody-general-padre">
+                                                                <div class="content-cardbody-general-padre-1">
+                                                                    <p class="textoindicativo">Street</p>
+                                                                </div>
+                                                                <div class="content-cardbody-general-padre-2">
+                                                                    <p class="textoresponsivo" id="dato6"></p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="content-cardbody-padre-9">
+                                                            <div class="content-cardbody-general-padre">
+                                                                <div class="content-cardbody-general-padre-1">
+                                                                    <p class="textoindicativo">City</p>
+                                                                </div>
+                                                                <div class="content-cardbody-general-padre-2">
+                                                                    <p class="textoresponsivo" id="dato7"></p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="content-cardbody-padre-10">
+                                                            <div class="content-cardbody-general-padre">
+                                                                <div class="content-cardbody-general-padre-1">
+                                                                    <p class="textoindicativo">State</p>
+                                                                </div>
+                                                                <div class="content-cardbody-general-padre-2">
+                                                                    <p class="textoresponsivo" id="dato8"></p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="content-cardbody-padre-11">
+                                                            <div class="content-cardbody-general-padre">
+                                                                <div class="content-cardbody-general-padre-1">
+                                                                    <p class="textoindicativo">Location</p>
+                                                                </div>
+                                                                <div class="content-cardbody-general-padre-2">
+                                                                    <p class="textoresponsivo" id="dato9"></p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="content-cardbody-padre-12">
+                                                            <div class="content-cardbody-general-padre">
+                                                                <div class="content-cardbody-general-padre-1">
+                                                                    <p class="textoindicativo">Rating</p>
+                                                                </div>
+                                                                <div class="content-cardbody-general-padre-2">
+                                                                    <p class="textoresponsivo" id="dato10"></p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        
+                                                        
+                                    
+                                                    </div>
+                                                </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+
+                
+            </div>
+        </div>
+    </div>
+    
+    <!--Footer-->
+    <footer class="footer-distributed">
+        <div class="footer-right">
+  
+          <a href="#"><i class="fa fa-facebook"></i><img src="img/facebook.png" class="imageniconofotter"></a>
+          <a href="#"><i class="fa fa-twitter"></i><img src="img/twitter.png" class="imageniconofotter"></a>
+          <a href="#"><i class="fa fa-instagram"></i><img src="img/instagram.png" class="imageniconofotter"></a>
+    
+  
+        </div>
+        <div class="footer-left">
+  
+          <p class="footer-links">
+            <a class="link-1" href="#">Home</a>
+  
+            <a href="#">Blog</a>
+  
+            <a href="#">Pricing</a>
+  
+            <a href="#">About</a>
+  
+            <a href="#">Faq</a>
+  
+            <a href="#">Contact</a>
+          </p>
+  
+          <p> Melp&copy; 2022</p>
+        </div>
+    </footer>
+  
+    <script>
+        function traerDatos() {
+            $.ajax ({
+                type:"GET",
+                url:"https://recruiting-datasets.s3.us-east-2.amazonaws.com/data_melp.json",
+                success:function(data) {
+                    var res;
+                    for (let item of data.results){
+                        res += "<tr><td>"+item.name+"</td><td>"+item.contact.site+""+item.contact.email
+                            +""+item.contact.phone+"</td><td>"+item.address.street+""+item.address.city
+                            +""+item.address.state+"</td><td>"+item.location+"</td><td>"+item.ratig+"</td></tr>";
+                    }
+                    //Limpiar el elemento
+                    $("#cuerpoTable").empty(res);
+                    //Coloca la nueva informacion en el elemento de forma dinamica
+                    $("#cuerpoTable").append(res);
+                },error:function(e) {
+                    alert("No se pudo realizar");
+                }
+            });
+            return false;
+            alert("acabo la funcion");
+        } 
+    </script>
+    
 </body>
 </html>
